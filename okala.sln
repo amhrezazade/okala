@@ -3,7 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "okala.api", "okala.api\okala.api.csproj", "{0818FB36-C097-46C1-8C87-60CBAFF64D05}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "okala.api", "src\okala.api\okala.api.csproj", "{315DEDF7-7BE0-4F94-BFBC-2687AD93113C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E8B9BADA-D235-44EF-96F8-5FB8C2886DFA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{6058F5A2-DE57-43DE-B761-E1CF3B7A9DA9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "okala.Test", "Test\okala.Test.csproj", "{D6C91937-EF13-4BFE-8C5B-9E70F9142CDB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "okala.core", "src\okala.core\okala.core.csproj", "{D91A53C0-E9FE-4C36-880B-73EE8204A214}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "okala.domain", "src\okala.domain\okala.domain.csproj", "{97CAA72B-77F8-4628-B4A4-8DFE4C426E22}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "okala.iinfrastructure", "src\okala.iinfrastructure\okala.iinfrastructure.csproj", "{CFA22996-832D-4370-A31E-90CDFC363C8E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,13 +23,36 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0818FB36-C097-46C1-8C87-60CBAFF64D05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0818FB36-C097-46C1-8C87-60CBAFF64D05}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0818FB36-C097-46C1-8C87-60CBAFF64D05}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0818FB36-C097-46C1-8C87-60CBAFF64D05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{315DEDF7-7BE0-4F94-BFBC-2687AD93113C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{315DEDF7-7BE0-4F94-BFBC-2687AD93113C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{315DEDF7-7BE0-4F94-BFBC-2687AD93113C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{315DEDF7-7BE0-4F94-BFBC-2687AD93113C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6C91937-EF13-4BFE-8C5B-9E70F9142CDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6C91937-EF13-4BFE-8C5B-9E70F9142CDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6C91937-EF13-4BFE-8C5B-9E70F9142CDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6C91937-EF13-4BFE-8C5B-9E70F9142CDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D91A53C0-E9FE-4C36-880B-73EE8204A214}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D91A53C0-E9FE-4C36-880B-73EE8204A214}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D91A53C0-E9FE-4C36-880B-73EE8204A214}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D91A53C0-E9FE-4C36-880B-73EE8204A214}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97CAA72B-77F8-4628-B4A4-8DFE4C426E22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97CAA72B-77F8-4628-B4A4-8DFE4C426E22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97CAA72B-77F8-4628-B4A4-8DFE4C426E22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97CAA72B-77F8-4628-B4A4-8DFE4C426E22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFA22996-832D-4370-A31E-90CDFC363C8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFA22996-832D-4370-A31E-90CDFC363C8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFA22996-832D-4370-A31E-90CDFC363C8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFA22996-832D-4370-A31E-90CDFC363C8E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{315DEDF7-7BE0-4F94-BFBC-2687AD93113C} = {E8B9BADA-D235-44EF-96F8-5FB8C2886DFA}
+		{D6C91937-EF13-4BFE-8C5B-9E70F9142CDB} = {6058F5A2-DE57-43DE-B761-E1CF3B7A9DA9}
+		{D91A53C0-E9FE-4C36-880B-73EE8204A214} = {E8B9BADA-D235-44EF-96F8-5FB8C2886DFA}
+		{97CAA72B-77F8-4628-B4A4-8DFE4C426E22} = {E8B9BADA-D235-44EF-96F8-5FB8C2886DFA}
+		{CFA22996-832D-4370-A31E-90CDFC363C8E} = {E8B9BADA-D235-44EF-96F8-5FB8C2886DFA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F6126FEE-1C72-4F21-B121-EC15F0C7F4F9}
