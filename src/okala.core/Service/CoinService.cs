@@ -16,5 +16,6 @@ public class CoinService : ICoinService
             "",
             "",
         ];
+        return null;
     }
 }
